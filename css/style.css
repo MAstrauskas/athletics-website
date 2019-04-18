@@ -3,6 +3,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #000;
+  margin: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -11,4 +16,118 @@ html {
 
 a {
   text-decoration: none;
+}
+
+/* Header */
+.nav {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+}
+.container {
+  width: 1035px;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  float: left;
+  line-height: 6em;
+}
+
+nav {
+  float: right;
+  line-height: 2em;
+}
+
+nav li {
+  float: left;
+}
+.nav-link {
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 4em 0 0;
+}
+
+.nav-link a {
+  color: #0a0d13;
+  position: relative;
+}
+
+/* UNDERLINE RED ANIMATION */
+.nav-link a:before,
+.nav-link a:after {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+
+.nav-link a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+
+.nav-link a:after {
+  opacity: 0;
+  transform: translateY(-8px/2);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+
+.nav-link a:hover::before,
+.nav-link a:focus::before,
+.nav-link a:hover::after,
+.nav-link a:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-link a:hover::before,
+.nav-link a:focus::before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+
+.nav-link a:hover::after,
+.nav-link a:focus::after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+}
+/* UNDERLINE END ANIMATION END */
+
+.nav-link.active a {
+  color: #e74c3c;
+}
+
+/* RESPONSIVENESS */
+
+/* Desktops */
+@media (min-width: 1281px) {
+}
+
+/* Laptops, Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Tablets, iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Tablets, iPads (Landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape) {
+}
+
+/* Low Resolution Tablets and Mobiles (Landscape) */
+@media (min-wdith: 481px) and (max-width: 767px) {
+}
+
+/* Most of the Smarpthones (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
 }
