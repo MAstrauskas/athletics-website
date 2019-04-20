@@ -1,5 +1,5 @@
 /* Global */
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -8,112 +8,304 @@ body {
   margin: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 a {
   text-decoration: none;
 }
 
 /* Header */
-.nav {
-  width: 100%;
-  height: 65px;
+.header {
+  height: 5rem;
   background-color: #fff;
-}
-.container {
-  width: 1035px;
-  margin: 0 auto;
 }
 
 .brand-logo {
-  float: left;
-  line-height: 6em;
+  display: inline-block;
+  margin-left: 2em;
+  line-height: 7em;
 }
 
-nav {
-  float: right;
-  line-height: 2em;
-}
-
-nav li {
-  float: left;
-}
-.nav-link {
-  display: block;
-  font-family: "Dosis", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0 4em 0 0;
-}
-
-.nav-link a {
-  color: #0a0d13;
-  position: relative;
-}
-
-/* UNDERLINE RED ANIMATION */
-.nav-link a:before,
-.nav-link a:after {
-  content: "";
+/* Mobile & Tablet menu button */
+.nav-toggle {
+  display: inline-block;
   position: absolute;
-  bottom: -1em;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #e74c3c;
+  z-index: 10;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.15s linear;
 }
 
-.nav-link a:before {
-  opacity: 0;
-  transform: translateY(-8px);
-  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+.nav-toggle:hover,
+.nav-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-link a:after {
-  opacity: 0;
-  transform: translateY(-8px/2);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
-}
-
-.nav-link a:hover::before,
-.nav-link a:focus::before,
-.nav-link a:hover::after,
-.nav-link a:focus::after {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.nav-link a:hover::before,
-.nav-link a:focus::before {
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0.2s;
-}
-
-.nav-link a:hover::after,
-.nav-link a:focus::after {
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    opacity 0s 0.2s;
-}
-/* UNDERLINE END ANIMATION END */
-
-.nav-link.active a {
-  color: #e74c3c;
+.nav-link {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
 }
 
 /* RESPONSIVENESS */
 
 /* Desktops */
 @media (min-width: 1281px) {
+  nav {
+    float: right;
+  }
+
+  nav li {
+    float: left;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .nav-item {
+    display: block;
+    font-size: 14px;
+    color: #0a0d13;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 1em 0 0;
+  }
+
+  .nav-item a {
+    position: relative;
+  }
+
+  .nav-link.active {
+    color: #e74c3c;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  /* UNDERLINE RED ANIMATION */
+  .nav-item a:before,
+  .nav-item a:after {
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+
+  .nav-item a:before {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  }
+
+  .nav-item a:after {
+    opacity: 0;
+    transform: translateY(-8px/2);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.2s;
+  }
+
+  .nav-item a:hover::before,
+  .nav-item a:focus::before,
+  .nav-item a:hover::after,
+  .nav-item a:focus::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-item a:hover::before,
+  .nav-item a:focus::before {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0.2s;
+  }
+
+  .nav-item a:hover::after,
+  .nav-item a:focus::after {
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+      opacity 0s 0.2s;
+  }
+  /* UNDERLINE END ANIMATION END */
+
+  .nav-item a:hover {
+    color: #0a0d13;
+  }
 }
 
 /* Laptops, Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 560px;
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+  }
+
+  .nav-item {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+    list-style-type: none;
+  }
+
+  .nav-item:nth-child(1) {
+    transform: translateY(-40px);
+  }
+
+  .nav-item:nth-child(2) {
+    transform: translateY(-80px);
+  }
+
+  .nav-item:nth-child(3) {
+    transform: translateY(-120px);
+  }
+
+  .nav-item:nth-child(4) {
+    transform: translateY(-160px);
+  }
+
+  .nav-item:nth-child(5) {
+    transform: translateY(-200px);
+  }
+
+  .nav-link {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #0a0d13;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    padding: 1rem;
+    list-style-type: none;
+    margin: 0 2em 0 0;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Menu Button Icon */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #0a0d13;
+    transform: rotate(0deg);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .menu-icon-bar,
+  .menu-icon-circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+
+  .menu-icon-bar {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .menu-icon-circle {
+    transition: stroke-dashoffset 0.3s linear 0.1s;
+    stroke-dashoffset: 144.513262038;
+    stroke-dasharray: 144.513262038;
+  }
+
+  /* Splash Background */
+  .splash {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 1px;
+    height: 1px;
+  }
+
+  .splash::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #e74c3c; /* change later */
+
+    /* Screen diamterer - 142vmax max
+    Circle twice that size to cover
+    */
+    width: 284vmax;
+    height: 284vmax;
+    top: -142vmax;
+    left: -142vmax;
+
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    /* Tells the browser that this property will be animated in the near future */
+    will-change: transform;
+  }
+
+  /* Active state */
+  .nav:target > .splash::after,
+  .nav-open > .splash::after {
+    transform: scale(1);
+  }
+
+  .nav:target .menu-icon,
+  .nav-open .menu-icon {
+    color: #fff;
+    transform: rotate(180deg);
+  }
+
+  .nav:target .menu-icon-circle,
+  .nav-open .menu-icon-circle {
+    stroke-dashoffset: 0;
+  }
+
+  .nav:target .menu-icon-bar:nth-child(1),
+  .nav:target .menu-icon-bar:nth-child(4),
+  .nav-open .menu-icon-bar:nth-child(1),
+  .nav-open .menu-icon-bar:nth-child(4) {
+    opacity: 0;
+  }
+
+  .nav:target .menu-icon-bar:nth-child(2),
+  .nav-open .menu-icon-bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .nav:target .menu-icon-bar:nth-child(3),
+  .nav-open .menu-icon-bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .nav:target .nav-menu,
+  .nav-open .nav-menu {
+    visibility: visible;
+  }
+
+  .nav:target .nav-item,
+  .nav-open .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Tablets, iPads (Portrait) */

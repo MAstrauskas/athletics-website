@@ -5,45 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
-
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>Fitness</title>
   </head>
   <body>
-    <header class="nav">
-      <div class="container">
-        <div class="brand-logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="116px"
-            height="41px"
-          >
-            <image
-              x="0px"
-              y="0px"
+    <div class="viewport">
+      <header class="header" role="banner">
+          <div class="brand-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
               width="116px"
               height="41px"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAApCAMAAADTVP08AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEX////86ef3x8LzpZ30sKn50s7ug3j99PP63droV0f2vLbrbWDqYlTteGzwj4XxmpGmpqaXl5c/Pz/ExMRcXFzh4eFNTU0wMDCJiYlra2vT09N6enrw8PC1tbXnTDwhISH///96xXRQAAAAHnRSTlMAIFCAcECwEDDwYNDgwKCQZnfdRLsizO6IqjOZEVXWcyA+AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+MEEg8AGTyjFaUAAAJOSURBVFjDvZfpukMwEIbHWqGWUFqU3P9dnkmGWHpU+2h8PzxpwrydJSMA1rJsx/UsOFOW35Mu5zEDNjD78Dzo6Kf0NKBBZNznq4YCeP1JVM3sLQ01Tp2gnoIyl5mn6jrqHbBY7A2lZZaazKBAm9U1HuFQQ309dzVN9WaFNCo1XU1TxWrXWaTjbUj+lFIvieM0ncqZGQHaTqx7g2/PcKSrAWTI+vfCZpwJEgcQIpeXQTjOhSjQzE2IUv1QkjNZJcSdK0b5wLm60cxkB6mqeQd6+w/a0qjGteZO45Hq7CCZeulkiqekQCguRKYGklPOoMN9jRDVE9DZDqCW93Y4QUuXHWYUwCfQ9hVKj9CVZvWa+56ZLixsQ5G3hnYUdaWKkjwo3YCxxJGy4TNoi6tr6BPzWHUw3isez52EsmBV4WMhbUALcX8uCkn+w0IVGmFvctwSdiuqLnwHRaP8BQplq4eQyYW8fAeFf6Dvwote5evwqhA/hM5mVw1J3mDGX0PHappXL+dPdReHkvOOkow9/ofQ7AVaq16gHmyoRcg1K4L4Z9CxRUxQrqJZq+Zwl0GW3QK3KLVAn/0CysWiDWZDxVIXKobZDveLHcoDGNi/gMqMLaHAc128jSzkWyE3aYpNkF1eW0QCxuTg29mn00i0hNrHjW8JYxvKQwpSrUVaTby0tRI0HxN10Q/NfkG5zFU+RtY8q8zwt4SVzs67o/zjdneVrrepuRPn0t8F12DtLhU6U0cMjpv7WJp6IlNDo+OmPtf4XREfN/WFLEwsymhr+AP8ApSoGUSJiwAAAABJRU5ErkJggg=="
-            />
-          </svg>
+            >
+              <image
+                x="0px"
+                y="0px"
+                width="116px"
+                height="41px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAApCAMAAADTVP08AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEX////86ef3x8LzpZ30sKn50s7ug3j99PP63droV0f2vLbrbWDqYlTteGzwj4XxmpGmpqaXl5c/Pz/ExMRcXFzh4eFNTU0wMDCJiYlra2vT09N6enrw8PC1tbXnTDwhISH///96xXRQAAAAHnRSTlMAIFCAcECwEDDwYNDgwKCQZnfdRLsizO6IqjOZEVXWcyA+AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+MEEg8AGTyjFaUAAAJOSURBVFjDvZfpukMwEIbHWqGWUFqU3P9dnkmGWHpU+2h8PzxpwrydJSMA1rJsx/UsOFOW35Mu5zEDNjD78Dzo6Kf0NKBBZNznq4YCeP1JVM3sLQ01Tp2gnoIyl5mn6jrqHbBY7A2lZZaazKBAm9U1HuFQQ309dzVN9WaFNCo1XU1TxWrXWaTjbUj+lFIvieM0ncqZGQHaTqx7g2/PcKSrAWTI+vfCZpwJEgcQIpeXQTjOhSjQzE2IUv1QkjNZJcSdK0b5wLm60cxkB6mqeQd6+w/a0qjGteZO45Hq7CCZeulkiqekQCguRKYGklPOoMN9jRDVE9DZDqCW93Y4QUuXHWYUwCfQ9hVKj9CVZvWa+56ZLixsQ5G3hnYUdaWKkjwo3YCxxJGy4TNoi6tr6BPzWHUw3isez52EsmBV4WMhbUALcX8uCkn+w0IVGmFvctwSdiuqLnwHRaP8BQplq4eQyYW8fAeFf6Dvwote5evwqhA/hM5mVw1J3mDGX0PHappXL+dPdReHkvOOkow9/ofQ7AVaq16gHmyoRcg1K4L4Z9CxRUxQrqJZq+Zwl0GW3QK3KLVAn/0CysWiDWZDxVIXKobZDveLHcoDGNi/gMqMLaHAc128jSzkWyE3aYpNkF1eW0QCxuTg29mn00i0hNrHjW8JYxvKQwpSrUVaTby0tRI0HxN10Q/NfkG5zFU+RtY8q8zwt4SVzs67o/zjdneVrrepuRPn0t8F12DtLhU6U0cMjpv7WJp6IlNDo+OmPtf4XREfN/WFLEwsymhr+AP8ApSoGUSJiwAAAABJRU5ErkJggg=="
+              />
+            </svg>
+          </div>
+          <nav id="nav" role="navigation">
+            <!-- <span class="navbar-toggle" id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span> -->
+            <ul
+              class="nav-menu"
+              id="mainNav"
+              tabindex="-1"
+              aria-label="main navigation"
+              hidden
+            >
+              <li class="nav-item active">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CLUB-LIFE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TRAINING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">INSTRUCTORS</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+
+            <!-- Menu Button for mobile devices -->
+            <a
+              href="#nav"
+              class="nav-toggle"
+              role="button"
+              aria-expanded="false"
+              aria-controls="menuNav"
+            >
+              <svg
+                class="menu-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+              >
+                <title>Menu Button</title>
+                <g>
+                  <line
+                    class="menu-icon-bar"
+                    x1="13"
+                    y1="16.5"
+                    x2="37"
+                    y2="16.5"
+                  />
+                  <line
+                    class="menu-icon-bar"
+                    x1="13"
+                    y1="24.5"
+                    x2="37"
+                    y2="24.5"
+                  />
+                  <line
+                    class="menu-icon-bar"
+                    x1="13"
+                    y1="24.5"
+                    x2="37"
+                    y2="24.5"
+                  />
+                  <line
+                    class="menu-icon-bar"
+                    x1="13"
+                    y1="32.5"
+                    x2="37"
+                    y2="32.5"
+                  />
+                  <circle class="menu-icon-circle" r="23" cx="25" cy="25" />
+                </g>
+              </svg>
+            </a>
+
+            <!-- Splash background -->
+            <div class="splash"></div>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li class="nav-link active"><a href="#">HOME</a></li>
-            <li class="nav-link"><a href="#">CLUB-LIFE</a></li>
-            <li class="nav-link"><a href="#">TRAINING</a></li>
-            <li class="nav-link"><a href="#">INSTRUCTORS</a></li>
-            <li class="nav-link"><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="cover"></div>
-    <div class="body"></div>
-    <footer class="footer"></footer>
+      </header>
+      <div class="cover"></div>
+      <div class="body"></div>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
