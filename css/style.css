@@ -55,10 +55,13 @@ a {
 /* Cover */
 .cover {
   background-image: url("../images/cover-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   position: absolute;
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 800px;
 }
 
 .main-cover {
@@ -96,6 +99,54 @@ a {
 
 .cover-hide {
   visibility: hidden;
+}
+
+/* Cover White Box */
+.showoff-box {
+  display: flex;
+  margin-top: -11%;
+  margin-left: 20%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  width: 50%;
+  height: 220px;
+}
+
+.showoff-inside-box-one {
+  width: 33%;
+  height: 100%;
+}
+
+.showoff-inside-box-two {
+  border: 1px solid #fff;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  width: 34%;
+  height: 100%;
+}
+
+.showoff-inside-box-three {
+  width: 33%;
+  height: 100%;
+}
+
+.showoff-inside-box-one,
+.showoff-inside-box-three {
+  display: flex;
+  margin: 7% 3%;
+}
+
+.showoff-inside-box-one-text,
+.showoff-inside-box-three-text {
+  margin-top: -8%;
+  margin-left: 4%;
+  text-transform: uppercase;
+}
+
+.showoff-inside-box-one-text a,
+.showoff-inside-box-three-text a {
+  font-size: 14px;
+  color: #e74c3c;
 }
 
 /* RESPONSIVE DESIGN */
