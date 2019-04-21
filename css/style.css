@@ -48,6 +48,7 @@ a {
 .nav-link {
   font-family: "Dosis", sans-serif;
   font-weight: bold;
+  color: #0a0d13;
 }
 
 /* RESPONSIVE DESIGN */
@@ -71,7 +72,6 @@ a {
   .nav-item {
     display: block;
     font-size: 14px;
-    color: #0a0d13;
     text-align: center;
     letter-spacing: 2px;
     text-decoration: none;
@@ -181,10 +181,7 @@ a {
   }
 
   .nav-link {
-    font-family: "Dosis", sans-serif;
-    font-weight: bold;
     font-size: 1.25rem;
-    color: #0a0d13;
     display: block;
     text-align: center;
     text-transform: uppercase;
