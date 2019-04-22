@@ -409,8 +409,8 @@ a {
     background-color: #e74c3c; /* change later */
 
     /* Screen diamterer - 142vmax max
-    Circle twice that size to cover
-    */
+      Circle twice that size to cover
+      */
     width: 284vmax;
     height: 284vmax;
     top: -142vmax;
