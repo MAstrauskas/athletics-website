@@ -124,10 +124,10 @@ a {
 }
 
 .showoff-inside-box-two {
-  border: 1px solid #fff;
-  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
   width: 34%;
-  height: 100%;
+  height: 20;
+  border: 2px solid #fff;
+  box-shadow: 0px 21px 49px 1px rgba(0, 0, 0, 0.2);
 }
 
 .showoff-inside-box-three {
@@ -249,6 +249,39 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+}
+
+.promotion {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.promotion-text {
+  margin-top: 2%;
+  padding-left: 50%;
+  padding-right: 35%;
+}
+
+.promotion-logo {
+  margin-top: 2%;
+}
+
+.promotion-logo img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.promotion-pros {
+  margin: 5% 25%;
+  text-align: left;
+}
+
+.promotion-pros-text p {
+  border-bottom: 1px solid rgba(189, 185, 185, 0.507);
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /* RESPONSIVE DESIGN */
@@ -464,6 +497,10 @@ a {
 
   .transparent-box-one {
     padding-right: 3%;
+  }
+
+  .promotion-text {
+    padding-right: 25%;
   }
 }
 
@@ -695,16 +732,26 @@ a {
     margin-left: -10%;
     border-bottom: 1px solid #000;
   }
+
   .transparent-box-divider svg {
     display: none;
   }
 
-  .red-box-button: {
+  .red-box-button {
     padding-left: 10%;
   }
 
   .red-box-button button {
     width: 40%;
+  }
+
+  .promotion-text {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+
+  .promotion-pros {
+    margin: 5% 5%;
   }
 }
 
@@ -717,12 +764,25 @@ a {
   .red-box-button button {
     width: 40%;
   }
+
+  .promotion-text {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+
+  .promotion-pros {
+    margin: 5% 5%;
+  }
 }
 
 /* iPhone 6,7,8 */
 @media (max-width: 375px) and (max-height: 667px) {
   .content {
     height: 100%;
+  }
+
+  .promotion-pros {
+    margin: 5% 5%;
   }
 }
 
