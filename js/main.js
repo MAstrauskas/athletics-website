@@ -1,36 +1,19 @@
-// let mainNavigation = document.getElementById("mainNav");
-// let navToggle = document.getElementById("navbar-toggle");
-
-// navToggle.addEventListener("click", function() {
-//   mainNavigation.classList.toggle("nav-active");
-// });
 const nav = document.querySelector("#nav");
 const menu = document.querySelector("#mainNav");
 const menuButton = document.querySelector(".nav-toggle");
-const cover = document.querySelector(".cover");
 
 let isMenuOpen = false;
 
 // Toggle active state of the menu
-menuButton.addEventListener(
-  "click",
-  e => {
-    e.preventDefault();
-    isMenuOpen = !isMenuOpen;
+menuButton.addEventListener("click", e => {
+  e.preventDefault();
+  isMenuOpen = !isMenuOpen;
 
-    // Toggle attributes and active class
-    menuButton.setAttribute("aria-expanded", String(isMenuOpen));
-    menu.hidden = !isMenuOpen;
-    nav.classList.toggle("nav-open");
-  }
-  // setTimeout(hideCover(), 1000)
-);
-
-// function hideCover() {
-//   if (isMenuOpen) {
-//     cover.classList.toggle("cover-hide");
-//   }
-// }
+  // Toggle attributes and active class
+  menuButton.setAttribute("aria-expanded", String(isMenuOpen));
+  menu.hidden = !isMenuOpen;
+  nav.classList.toggle("nav-open");
+});
 
 nav.addEventListener("keydown", e => {
   // Abort if menu is not open or modify keys pressed

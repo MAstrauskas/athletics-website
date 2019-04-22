@@ -53,7 +53,7 @@ a {
 }
 
 /* Cover */
-.cover {
+.content {
   background-image: url("../images/cover-background.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ a {
   display: block;
   margin-left: 20%;
 }
-.cover .container {
+.content .container {
   position: relative;
   display: block;
   margin: 20em auto;
@@ -94,7 +94,7 @@ a {
 .cover-text {
   display: inline-block;
   width: 39%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cover-hide {
@@ -115,6 +115,7 @@ a {
 
 .showoff-inside-box-one {
   width: 33%;
+  padding-right: 2%;
   height: 100%;
 }
 
@@ -149,10 +150,37 @@ a {
   color: #e74c3c;
 }
 
+/* MAIN CONTENT */
+/* Transparent Box */
+.transparent-box {
+  display: flex;
+  margin: 4% 20%;
+  color: #000;
+}
+
+.transparent-box-one {
+  width: 80%;
+  margin-top: 1.5%;
+  color: #e74c3c;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.transparent-box-one h3 {
+  padding-left: 10%;
+}
+
+.transparent-box-two {
+  display: block;
+  padding-left: 2%;
+  margin-top: 3%;
+  margin-right: 15%;
+  font-size: 16px;
+}
 /* RESPONSIVE DESIGN */
 
 /* Desktops */
-@media (min-width: 1281px) {
+@media (min-width: 851px) {
   nav {
     float: right;
   }
@@ -240,8 +268,47 @@ a {
   }
 }
 
+@media (max-width: 1345px) {
+  .transparent-box-one {
+    margin-top: -0.5%;
+    margin-left: -10%;
+  }
+}
+
+/* iPad Pro */
+@media (max-width: 1367px) {
+  .showoff-box {
+    margin-top: -14%;
+    margin-left: 15%;
+    width: 65%;
+  }
+
+  .showoff-inside-box-one,
+  .showoff-inside-box-three {
+    width: 40%;
+  }
+}
+
 /* Laptops, Desktops */
 @media (max-width: 1280px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .cover-text {
+    width: 50%;
+  }
+
+  .transparent-box {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-toggle {
+    display: block;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -404,21 +471,42 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
-
-  .cover-text {
-    width: 50%;
-  }
 }
-
 /* Tablets, iPads (Portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .cover-text {
     width: 60%;
   }
+
+  .showoff-box {
+    margin-top: -25%;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .showoff-inside-box-one,
+  .showoff-inside-box-three {
+    width: 50%;
+  }
+
+  .transparent-box {
+    margin: 10% 0% 10% 18%;
+  }
+
+  .transparent-box-one {
+    padding-right: 3%;
+  }
 }
 
-/* Tablets, iPads (Landscape) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape) {
+@media (max-width: 770px) {
+  .transparent-box {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .transparent-box-one {
+    font-size: 18px;
+  }
 }
 
 /* Low Resolution Tablets and Mobiles (Landscape) */
@@ -441,12 +529,74 @@ a {
   }
 
   .cover-text {
-    font-size: 12px;
+    font-size: 16px;
     width: 75%;
+  }
+
+  .showoff-box {
+    display: none;
+  }
+
+  .transparent-box {
+    display: flexbox;
+    flex-direction: column;
+    margin-left: 25%;
+    text-align: center;
+  }
+
+  .transparent-box-one {
+    font-size: 24px;
+  }
+
+  .transparent-box-two {
+    margin-left: -20%;
+  }
+
+  .transparent-box-divider {
+    margin-left: -30%;
+    border-bottom: 1px solid #000;
+  }
+  .transparent-box-divider svg {
+    display: none;
   }
 }
 
-/* iPhone 6,7,8 Plus & X */
+/* iPhone 6,7,8 Plus */
+@media (min-width: 400px) and (max-width: 450px) {
+  .transparent-box-one {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+/* iPhone 5 */
+@media (min-width: 300px) and (max-width: 320px) {
+  .transparent-box {
+    display: flexbox;
+    flex-direction: column;
+    margin-top: 120%;
+    margin-left: 25%;
+    text-align: center;
+  }
+
+  .transparent-box-one {
+    font-size: 24px;
+  }
+
+  .transparent-box-two {
+    margin-left: -20%;
+  }
+
+  .transparent-box-divider {
+    margin-left: -30%;
+    border-bottom: 1px solid #000;
+  }
+
+  .transparent-box-divider svg {
+    display: none;
+  }
+}
+
 @media (max-width: 320px) {
   .main-cover {
     margin-top: -70%;
@@ -463,5 +613,9 @@ a {
   .cover-text {
     font-size: 12px;
     width: 75%;
+  }
+
+  .showoff-box {
+    display: none;
   }
 }
