@@ -18,6 +18,11 @@ programFatButton.addEventListener("click", e => {
   programStrengthButton.classList.remove("active");
 });
 
+programMuscleButton.addEventListener("click", e => {
+  e.preventDefault();
+  programStrengthButton.classList.remove("active");
+});
+
 // Toggle active state of the menu
 menuButton.addEventListener("click", e => {
   e.preventDefault();
