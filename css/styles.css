@@ -801,129 +801,6 @@ a {
     height: 90%;
   }
 }
-/* iPhone 6,7,8 Plus */
-@media (min-width: 400px) and (max-width: 450px) {
-  .main-cover {
-    margin-top: -50%;
-  }
-
-  .cover-name {
-    font-size: 24px;
-  }
-
-  .cover-name-text {
-    font-size: 16px;
-    width: 80%;
-  }
-
-  .cover-text {
-    font-size: 16px;
-    width: 75%;
-  }
-
-  .showoff-box {
-    display: none;
-  }
-
-  .transparent-box {
-    display: flexbox;
-    flex-direction: column;
-    margin: -40% auto 10% auto !important;
-    text-align: center;
-  }
-
-  .transparent-box-one {
-    font-size: 24px;
-    margin: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .transparent-box-divider {
-    border-bottom: 1px solid #000;
-  }
-
-  .transparent-box-divider svg {
-    display: none;
-  }
-
-  .transparent-box-two {
-    margin: auto;
-  }
-
-  .red-box-button button {
-    margin: auto;
-    width: 40%;
-  }
-
-  .promotion-pros {
-    margin: 5% 5%;
-    display: none;
-  }
-
-  .red-box-inside-text {
-    font-size: 30px !important;
-  }
-
-  .red-box-program-selection {
-    margin-left: 2%;
-    width: 80%;
-  }
-
-  .red-box-program-fat,
-  .red-box-program-strength,
-  .red-box-program-muscle {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .footer .links a {
-    font-size: 14px;
-  }
-
-  .footer .copyright p {
-    font-size: 12px;
-  }
-}
-
-/* iPhone X */
-@media (max-width: 375px) and (max-height: 812px) {
-  .content {
-    height: 80%;
-  }
-
-  .red-box-button button {
-    margin: auto;
-    width: 40%;
-  }
-
-  .promotion-pros {
-    display: none;
-  }
-
-  .red-box-inside-text {
-    font-size: 28px !important;
-  }
-
-  .red-box-program-selection {
-    margin: auto;
-    width: 70%;
-  }
-
-  .red-box-program-fat,
-  .red-box-program-strength,
-  .red-box-program-muscle {
-    margin: 0 5% 5% 5%;
-  }
-
-  .footer .links a {
-    font-size: 14px;
-  }
-
-  .footer .copyright p {
-    font-size: 12px;
-  }
-}
 
 /* iPhone 6,7,8 */
 @media (max-width: 375px) and (max-height: 667px) {
@@ -1067,5 +944,129 @@ a {
   .red-box-program-muscle {
     margin-left: 5%;
     margin-right: 5%;
+  }
+}
+
+/* iPhone 6,7,8 Plus */
+@media (min-width: 400px) and (max-width: 450px) {
+  .main-cover {
+    margin-top: -50%;
+  }
+
+  .cover-name {
+    font-size: 24px;
+  }
+
+  .cover-name-text {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .cover-text {
+    font-size: 16px;
+    width: 75%;
+  }
+
+  .showoff-box {
+    display: none;
+  }
+
+  .transparent-box {
+    display: flexbox;
+    flex-direction: column;
+    margin: -40% auto 10% auto !important;
+    text-align: center;
+  }
+
+  .transparent-box-one {
+    font-size: 24px;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .transparent-box-divider {
+    border-bottom: 1px solid #000;
+  }
+
+  .transparent-box-divider svg {
+    display: none;
+  }
+
+  .transparent-box-two {
+    margin: auto;
+  }
+
+  .red-box-button button {
+    margin: auto;
+    width: 40%;
+  }
+
+  .promotion-pros {
+    margin: 5% 5%;
+    display: none;
+  }
+
+  .red-box-inside-text {
+    font-size: 30px !important;
+  }
+
+  .red-box-program-selection {
+    margin-left: 2%;
+    width: 80%;
+  }
+
+  .red-box-program-fat,
+  .red-box-program-strength,
+  .red-box-program-muscle {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .footer .links a {
+    font-size: 14px;
+  }
+
+  .footer .copyright p {
+    font-size: 12px;
+  }
+}
+
+/* iPhone X */
+@media (max-width: 375px) and (max-height: 812px) {
+  .content {
+    height: 80%;
+  }
+
+  .red-box-button button {
+    margin: auto;
+    width: 40%;
+  }
+
+  .promotion-pros {
+    display: none;
+  }
+
+  .red-box-inside-text {
+    font-size: 28px !important;
+  }
+
+  .red-box-program-selection {
+    margin: auto;
+    width: 70%;
+  }
+
+  .red-box-program-fat,
+  .red-box-program-strength,
+  .red-box-program-muscle {
+    margin: 0 5% 5% 5%;
+  }
+
+  .footer .links a {
+    font-size: 14px;
+  }
+
+  .footer .copyright p {
+    font-size: 12px;
   }
 }
