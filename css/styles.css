@@ -104,8 +104,7 @@ a {
 /* Cover White Box */
 .showoff-box {
   display: flex;
-  margin-top: -10%;
-  margin-left: 20%;
+  margin: -10% auto;
   background-color: #fff;
   border: 2px solid #fff;
   box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
@@ -158,8 +157,9 @@ a {
 /* Transparent Box */
 .transparent-box {
   display: flex;
-  margin: 4% 20%;
+  margin: 15% auto 5% auto;
   color: #000;
+  width: 45%;
 }
 
 .transparent-box:after {
@@ -188,12 +188,13 @@ a {
 }
 
 .intro-video {
-  margin: 0% 0% 10% 20%;
+  margin: 0 auto 5% auto;
+  width: 50%;
 }
 
 .intro-video-red-box {
   background-color: #e74c3c;
-  width: 60%;
+
   background: linear-gradient(to bottom right, #e74c3c 25%, #fff 45%);
 }
 
@@ -211,6 +212,7 @@ a {
 .red-box {
   background: #e74c3c;
   color: #fff;
+  margin: 0 auto;
   width: 100%;
   text-align: center;
 }
@@ -263,18 +265,17 @@ a {
 }
 
 .promotion-logo {
-  margin-top: 2%;
+  margin: 5% auto;
 }
 
 .promotion-logo img {
   max-width: 100%;
   width: 100%;
   height: auto;
-  margin-bottom: 5%;
 }
 
 .promotion-pros {
-  margin: 5% 25%;
+  margin: 0% 25% 5% 25%;
   text-align: left;
 }
 
@@ -291,9 +292,7 @@ a {
 
 .red-box-program-selection {
   display: flex;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 5%;
+  margin: 5% auto;
   box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
   width: 40%;
 }
@@ -471,7 +470,7 @@ a {
   }
 }
 
-/* iPad Pro */
+/* iPad Pro ++ */
 @media (max-width: 1367px) {
   .showoff-box {
     margin-top: -14%;
@@ -490,7 +489,7 @@ a {
   }
 
   .red-box-button {
-    padding-left: 5%;
+    margin: 0 auto;
   }
 
   .red-box-button button {
@@ -535,11 +534,19 @@ a {
   }
 
   .transparent-box {
-    margin-right: 10%;
+    width: 70%;
+  }
+
+  .transparent-box-one {
+    font-size: 18px;
+  }
+
+  .intro-video {
+    width: 55%;
   }
 }
 
-/* iPad */
+/* iPad Pro */
 @media (min-width: 1020px) and (max-width: 1100px) {
   .main-cover {
     margin-top: 0%;
@@ -559,10 +566,6 @@ a {
 
   .showoff-box {
     margin-top: 40%;
-  }
-
-  .red-box-button {
-    padding-left: 7%;
   }
 }
 
@@ -589,8 +592,7 @@ a {
   }
 
   .showoff-box {
-    margin-top: -30%;
-    margin-left: 10%;
+    margin: -30% auto 10% auto;
     width: 80%;
   }
 
@@ -605,10 +607,6 @@ a {
 
   .transparent-box-one {
     padding-right: 3%;
-  }
-
-  .promotion-text {
-    padding-right: 25%;
   }
 
   .red-box-program-selection {
@@ -626,7 +624,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 560px;
+    height: 360px;
     position: relative;
     z-index: 5;
     visibility: hidden;
@@ -830,19 +828,18 @@ a {
   .transparent-box {
     display: flexbox;
     flex-direction: column;
-    margin-left: 15%;
-    margin-top: -40%;
+    margin: -40% auto 10% auto;
     text-align: center;
   }
 
   .transparent-box-one {
     font-size: 24px;
+    margin: auto;
     padding-left: 10%;
     padding-right: 10%;
   }
 
   .transparent-box-divider {
-    margin-left: -10%;
     border-bottom: 1px solid #000;
   }
 
@@ -850,18 +847,13 @@ a {
     display: none;
   }
 
-  .red-box-button {
-    padding-left: 10%;
+  .transparent-box-two {
+    margin: auto;
   }
 
   .red-box-button button {
-    margin-left: -15%;
+    margin: auto;
     width: 40%;
-  }
-
-  .promotion-text {
-    padding-left: 20%;
-    padding-right: 10%;
   }
 
   .promotion-pros {
@@ -874,7 +866,7 @@ a {
   }
 
   .red-box-program-selection {
-    margin-left: 2%;
+    margin: auto;
     width: 80%;
   }
 
@@ -901,17 +893,11 @@ a {
   }
 
   .red-box-button button {
-    margin-left: -5%;
+    margin: auto;
     width: 40%;
   }
 
-  .promotion-text {
-    padding-left: 20%;
-    padding-right: 10%;
-  }
-
   .promotion-pros {
-    margin: 5% 5%;
     display: none;
   }
 
@@ -920,15 +906,14 @@ a {
   }
 
   .red-box-program-selection {
-    margin-left: 2%;
+    margin: auto;
     width: 70%;
   }
 
   .red-box-program-fat,
   .red-box-program-strength,
   .red-box-program-muscle {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 5% 5% 5%;
   }
 
   .footer .links a {
@@ -952,7 +937,7 @@ a {
   }
 
   .red-box-program-selection {
-    margin-left: 2%;
+    margin: auto;
     width: 70%;
   }
 }
@@ -998,16 +983,21 @@ a {
 
   .transparent-box-one {
     font-size: 24px;
+    margin: auto;
     padding-left: 5%;
     padding-right: 5%;
   }
 
   .transparent-box-divider {
-    margin-left: -10%;
+    margin-left: 0;
     border-bottom: 1px solid #000;
   }
   .transparent-box-divider svg {
     display: none;
+  }
+
+  .transparent-box-two {
+    margin: auto;
   }
 }
 
@@ -1020,22 +1010,26 @@ a {
   .transparent-box {
     display: flexbox;
     flex-direction: column;
-    margin-top: -50%;
-    margin-left: 15%;
+    margin: -50% auto 10% auto;
     text-align: center;
   }
 
   .transparent-box-one {
     font-size: 24px;
+    margin: auto;
   }
 
   .transparent-box-divider {
-    margin-left: -10%;
+    margin-left: 0%;
     border-bottom: 1px solid #000;
   }
 
   .transparent-box-divider svg {
     display: none;
+  }
+
+  .transparent-box-two {
+    margin: auto;
   }
 
   .main-cover {
