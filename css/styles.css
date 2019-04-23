@@ -546,6 +546,68 @@ a {
   }
 }
 
+/* 15inch laptops */
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .cover-name {
+    margin: -20% auto 0 auto;
+  }
+
+  .showoff-box {
+    margin-top: -20%;
+  }
+
+  .transparent-box {
+    margin: 20% auto 5% auto;
+  }
+
+  .transparent-box-one {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .transparent-box-divider {
+    margin: -3% auto;
+  }
+
+  .transparent-box-two {
+    margin: 0 auto;
+  }
+}
+
+/* 13inch laptops */
+@media (min-width: 1020px) and (min-height: 750px) and (max-height: 850px) {
+  .cover-name {
+    margin: -20% auto 0 auto;
+  }
+
+  .cover-text {
+    font-size: 22px !important;
+  }
+
+  .showoff-box {
+    margin-top: -25% !important;
+  }
+
+  .transparent-box {
+    margin: 20% auto 5% auto;
+  }
+
+  .transparent-box-one {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .transparent-box-divider {
+    margin: -3% auto;
+  }
+
+  .transparent-box-two {
+    margin: 0 auto;
+  }
+}
+
 /* iPad Pro */
 @media (min-width: 1020px) and (max-width: 1100px) {
   .main-cover {
