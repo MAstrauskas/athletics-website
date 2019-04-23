@@ -828,7 +828,7 @@ a {
   .transparent-box {
     display: flexbox;
     flex-direction: column;
-    margin: -40% auto 10% auto;
+    margin: -20% auto 10% auto;
     text-align: center;
   }
 
