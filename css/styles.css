@@ -355,6 +355,31 @@ a {
   color: #000 !important;
 }
 
+.footer {
+  display: block;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.footer .links {
+  padding-top: 2%;
+}
+
+.footer .links a {
+  padding: 1%;
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+}
+
+.footer .links a:hover {
+  color: #e74c3c;
+}
+
+.footer .copyright p {
+  font-size: 14px;
+}
+
 /* RESPONSIVE DESIGN */
 
 /* Desktops */
@@ -859,6 +884,14 @@ a {
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .footer .links a {
+    font-size: 14px;
+  }
+
+  .footer .copyright p {
+    font-size: 12px;
+  }
 }
 
 /* iPhone X */
@@ -897,6 +930,14 @@ a {
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .footer .links a {
+    font-size: 14px;
+  }
+
+  .footer .copyright p {
+    font-size: 12px;
+  }
 }
 
 /* iPhone 6,7,8 */
@@ -912,7 +953,7 @@ a {
 
   .red-box-program-selection {
     margin-left: 2%;
-    width: 90%;
+    width: 70%;
   }
 }
 
