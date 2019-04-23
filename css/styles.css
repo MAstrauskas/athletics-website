@@ -210,23 +210,22 @@ a {
 
 .red-box {
   background: #e74c3c;
+  color: #fff;
   width: 100%;
+  text-align: center;
 }
 
 .red-box-text {
-  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
   font-size: 24px;
   padding-top: 2%;
   padding-left: 30%;
-  padding-right: 40%;
+  padding-right: 30%;
 }
 
 .red-box-button {
   text-align: center;
-  padding-right: 10%;
 }
 
 .red-box-button button {
@@ -271,6 +270,7 @@ a {
   max-width: 100%;
   width: 100%;
   height: auto;
+  margin-bottom: 5%;
 }
 
 .promotion-pros {
@@ -282,6 +282,77 @@ a {
   border-bottom: 1px solid rgba(189, 185, 185, 0.507);
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+.red-box-text span.red-box-inside-text {
+  margin-top: 15%;
+  font-size: 56px;
+}
+
+.red-box-program-selection {
+  display: flex;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  width: 40%;
+}
+
+.red-box-program-selection .program-one,
+.red-box-program-selection .program-two,
+.red-box-program-selection .program-three {
+  width: 33%;
+  height: 100%;
+}
+
+.red-box-program-selection .program-one button,
+.red-box-program-selection .program-two button,
+.red-box-program-selection .program-three button {
+  background-color: #ca4334;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 4em;
+}
+
+.red-box-program-selection .program-one button:hover,
+.red-box-program-selection .program-two button:hover,
+.red-box-program-selection .program-three button:hover {
+  transition: 1s ease;
+  color: #000;
+}
+
+.red-box-program-selection .program-one button:focus,
+.red-box-program-selection .program-two button:focus,
+.red-box-program-selection .program-three button:focus,
+.red-box-program-selection .program-one button:active,
+.red-box-program-selection .program-two button:active,
+.red-box-program-selection .program-three button:active {
+  color: #000;
+}
+
+.red-box-program-fat,
+.red-box-program-strength,
+.red-box-program-muscle {
+  display: none;
+  text-align: left;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 2%;
+}
+
+.is-visible {
+  display: block;
+}
+
+.active {
+  color: #000 !important;
 }
 
 /* RESPONSIVE DESIGN */
@@ -400,6 +471,18 @@ a {
   .red-box-button button {
     width: 20%;
   }
+
+  .red-box-program-selection .program-one,
+  .red-box-program-selection .program-two,
+  .red-box-program-selection .program-three {
+    width: 50%;
+    height: 100%;
+  }
+
+  .red-box-program-selection {
+    margin-left: 25%;
+    width: 50%;
+  }
 }
 
 /* Laptops, Desktops */
@@ -501,6 +584,11 @@ a {
 
   .promotion-text {
     padding-right: 25%;
+  }
+
+  .red-box-program-selection {
+    margin-left: 20%;
+    width: 60%;
   }
 }
 
@@ -742,6 +830,7 @@ a {
   }
 
   .red-box-button button {
+    margin-left: -15%;
     width: 40%;
   }
 
@@ -752,6 +841,23 @@ a {
 
   .promotion-pros {
     margin: 5% 5%;
+    display: none;
+  }
+
+  .red-box-inside-text {
+    font-size: 30px !important;
+  }
+
+  .red-box-program-selection {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .red-box-program-fat,
+  .red-box-program-strength,
+  .red-box-program-muscle {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -762,6 +868,7 @@ a {
   }
 
   .red-box-button button {
+    margin-left: -5%;
     width: 40%;
   }
 
@@ -772,6 +879,23 @@ a {
 
   .promotion-pros {
     margin: 5% 5%;
+    display: none;
+  }
+
+  .red-box-inside-text {
+    font-size: 28px !important;
+  }
+
+  .red-box-program-selection {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .red-box-program-fat,
+  .red-box-program-strength,
+  .red-box-program-muscle {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -783,6 +907,12 @@ a {
 
   .promotion-pros {
     margin: 5% 5%;
+    display: none;
+  }
+
+  .red-box-program-selection {
+    margin-left: 5%;
+    width: 90%;
   }
 }
 
@@ -886,5 +1016,21 @@ a {
 
   .showoff-box {
     display: none;
+  }
+
+  .red-box-inside-text {
+    font-size: 28px !important;
+  }
+
+  .red-box-program-selection {
+    margin-left: 5%;
+    width: 70%;
+  }
+
+  .red-box-program-fat,
+  .red-box-program-strength,
+  .red-box-program-muscle {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
